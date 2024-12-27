@@ -4,10 +4,11 @@ body, html {
     padding: 0;
     height: 100%;
     overflow: hidden;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
-/* Conteneur de la vidéo en arrière-plan */
+/* Vidéo de fond */
 .video-background {
     position: absolute;
     top: 0;
@@ -15,7 +16,7 @@ body, html {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -1;
+    z-index: -2;
 }
 
 .video-background video {
@@ -27,55 +28,108 @@ body, html {
     width: auto;
     height: auto;
     transform: translate(-50%, -50%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Légère obscurité */
     z-index: -1;
 }
 
-/* Contenu centré */
+/* Contenu principal */
 .content {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
 }
 
 .content h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 0;
+    font-weight: 600;
 }
 
 .content p {
-    font-size: 1.2rem;
-    margin: 10px 0 20px;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-weight: 300;
 }
 
-/* Section d'inscription */
-.subscribe {
+/* Section des services */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     position: absolute;
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.service-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 150px;
+    margin: 10px 0;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.service-banner:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.service-content {
     text-align: center;
     color: white;
 }
 
-.subscribe input[type="email"] {
-    padding: 10px;
-    width: 300px;
-    border: none;
-    border-radius: 5px;
-    margin-right: 10px;
+.service-content h2 {
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+    font-weight: 600;
 }
 
-.subscribe button {
-    padding: 10px 20px;
-    background-color: #000;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.service-content p {
+    font-size: 0.9rem;
+    font-weight: 300;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 3rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .service-banner {
+        width: 90%;
+        height: 120px;
+    }
+}
+
 
 .subscribe button:hover {
     background-color: #555;
