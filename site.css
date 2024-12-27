@@ -122,9 +122,16 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 .service-card {
     margin: 20px auto;
-    max-width: 600px;
+    max-width: 300px;
     padding: 20px;
     background: #f8f9fa;
     border-radius: 8px;
@@ -154,6 +161,49 @@ nav a:hover {
     font-size: 1rem;
 }
 
+/* Section contact */
+#contact {
+    padding: 40px 20px;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #0056b3;
+}
+
 /* Pied de page */
 footer {
     text-align: center;
@@ -180,6 +230,10 @@ footer a:hover {
 
     #hero h2 {
         font-size: 2rem;
+    }
+
+    .service-container {
+        flex-direction: column;
     }
 
     .service-card {
