@@ -1,24 +1,26 @@
 /* Style général */
 body {
-    font-family: 'Poppins', sans-serif; /* Police moderne */
+    font-family: 'Roboto', sans-serif; /* Typographie moderne et épurée */
     margin: 0;
     padding: 0;
-    background: #f0f4f8; /* Couleur douce pour l'arrière-plan */
-    color: #333;
+    background: #f8f9fa; /* Arrière-plan neutre */
+    color: #333; /* Texte sombre mais doux */
     line-height: 1.6;
 }
 
 /* En-tête */
 header {
-    background: linear-gradient(90deg, #007BFF, #0056b3); /* Dégradé moderne */
-    color: white;
-    padding: 20px;
+    background: white;
+    color: #333;
+    padding: 20px 30px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    border-bottom: 2px solid #eaeaea;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 header h1 {
-    font-size: 2.5rem; /* Texte plus grand et impactant */
+    font-size: 2.2rem;
+    font-weight: 300;
     margin: 0;
 }
 
@@ -27,116 +29,39 @@ nav {
 }
 
 nav a {
-    margin: 0 15px;
-    color: white;
+    margin: 0 10px;
+    color: #007BFF;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #ffe600; /* Couleur d'accentuation au survol */
+    color: #0056b3;
 }
 
 /* Section héros */
 #hero {
-    background: linear-gradient(90deg, #007BFF, #00c6ff); /* Dégradé plus clair */
+    background: #007BFF;
     color: white;
     text-align: center;
-    padding: 80px 20px;
-    margin-bottom: 20px;
+    padding: 60px 20px;
     border-bottom: 5px solid #0056b3;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
 #hero h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 300;
     margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
 }
 
 #hero button {
-    background: #ffe600;
-    color: #333;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-}
+    background: #00
 
-#hero button:hover {
-    background: #ffcc00;
-}
-
-/* Sections */
-section {
-    padding: 40px 20px;
-    margin: 20px auto;
-    max-width: 900px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombres modernes */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-section:hover {
-    transform: translateY(-5px); /* Animation de survol */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-section h2 {
-    font-size: 1.8rem;
-    color: #007BFF;
-    margin-bottom: 20px;
-}
-
-section p {
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Pied de page */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #333;
-    color: white;
-    font-size: 0.9rem;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Bouton de contact */
-a.button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s ease-in-out;
-}
-
-a.button:hover {
-    background: #0056b3;
-}
-
-/* Adaptation pour mobiles */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    #hero h2 {
-        font-size: 1.5rem;
-    }
-
-    section {
-        padding: 20px;
-    }
-}
