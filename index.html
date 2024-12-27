@@ -3,46 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services de Tutorat</title>
-    <link rel="stylesheet" href="site.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta name="description" content="Consultants urbains et gestionnaires immobiliers">
+    <title>Consultants Immobiliers</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Services de Tutorat</h1>
-        <nav>
-            <a href="#services">Services</a>
-            <a href="#about">À propos</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <section id="hero">
-        <h2>Améliorez vos compétences avec nos tutorats personnalisés</h2>
-        <button>Réserver un cours</button>
-    </section>
-    <section id="services">
-        <h2>Nos Services</h2>
-        <ul>
-            <li>Mathématiques (primaire à lycée)</li>
-            <li>Physique et Chimie</li>
-            <li>Aide aux devoirs</li>
-        </ul>
-    </section>
-    <section id="about">
-        <h2>À propos de nous</h2>
-        <p>Nous sommes une équipe de tuteurs passionnés, prêts à vous aider à réussir.</p>
-    </section>
-    <section id="contact">
-        <h2>Contactez-nous</h2>
-        <form>
-            <input type="text" placeholder="Votre nom" required>
-            <input type="email" placeholder="Votre e-mail" required>
-            <textarea placeholder="Votre message"></textarea>
-            <button type="submit">Envoyer</button>
+    <div class="hero">
+        <video autoplay muted loop class="background-video">
+            <source src="video.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas les vidéos HTML5.
+        </video>
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Consultants urbains, gestionnaires immobiliers</h1>
+        </div>
+    </div>
+
+    <section class="subscribe">
+        <h2>Subscribe</h2>
+        <p>Sign up to be the first to get updates.</p>
+        <form action="#">
+            <input type="email" placeholder="Email" required>
+            <button type="submit">Sign Up</button>
         </form>
     </section>
-    <footer>
-        <p>© 2024 Services de Tutorat. Tous droits réservés.</p>
-    </footer>
 </body>
 </html>
