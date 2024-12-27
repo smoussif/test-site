@@ -63,5 +63,99 @@ nav a:hover {
 }
 
 #hero button {
-    background: #00
+    background: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
 
+#hero button:hover {
+    background: #003f8f;
+    transform: scale(1.05);
+}
+
+/* Sections */
+section {
+    padding: 40px 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #0056b3;
+}
+
+/* Boutons principaux */
+a.button {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 20px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+a.button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Adaptation pour mobiles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    #hero h2 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
