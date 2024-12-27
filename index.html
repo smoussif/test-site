@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BLOOMGMT - Accueil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Vidéo de fond -->
@@ -16,32 +16,44 @@
         </video>
     </div>
 
-    <!-- Overlay pour obscurcir la vidéo -->
+    <!-- Overlay -->
     <div class="overlay"></div>
 
-    <!-- Contenu principal : Nom de la compagnie et services -->
-    <div class="main-content">
-        <!-- Nom de la compagnie -->
-        <header class="content">
-            <h1>BLOOMGMT</h1>
-            <p>Service conseil en urbanisme et aménagement urbain</p>
-        </header>
+    <!-- En-tête -->
+    <header>
+        <h1>BLOOMGMT</h1>
+        <nav>
+            <a href="#hero">Accueil</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-        <!-- Section des services -->
-        <section class="services">
-            <a href="urbanisme.html" class="service-banner">
-                <div class="service-content">
-                    <h2>Conseil d'Urbanisme et Aménagement Urbain</h2>
-                    <p>Découvrez nos services pour planifier et structurer vos projets urbains.</p>
-                </div>
-            </a>
-            <a href="amenagement.html" class="service-banner">
-                <div class="service-content">
-                    <h2>Entretien et Aménagement de Terrain</h2>
-                    <p>Valorisez vos espaces extérieurs avec nos solutions sur mesure.</p>
-                </div>
-            </a>
-        </section>
-    </div>
+    <!-- Section héros -->
+    <section id="hero">
+        <h2>Service Conseil d'Urbanisme et Aménagement Urbain</h2>
+        <p>Des solutions sur mesure pour vos projets d'urbanisme et la gestion de vos terrains.</p>
+        <a href="#services" class="button">Découvrez nos services</a>
+    </section>
+
+    <!-- Section des services -->
+    <section id="services">
+        <h2>Nos Services</h2>
+        <div class="service-card">
+            <h3>Urbanisme et Aménagement Urbain</h3>
+            <p>Nous offrons un accompagnement complet pour planifier et structurer vos projets urbains.</p>
+            <a href="urbanisme.html" class="button">En savoir plus</a>
+        </div>
+        <div class="service-card">
+            <h3>Entretien et Aménagement de Terrain</h3>
+            <p>Des solutions adaptées pour entretenir et aménager vos espaces extérieurs.</p>
+            <a href="amenagement.html" class="button">En savoir plus</a>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2024 BLOOMGMT. Tous droits réservés. <a href="#contact">Contactez-nous</a>.</p>
+    </footer>
 </body>
 </html>
