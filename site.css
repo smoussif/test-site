@@ -104,6 +104,29 @@ header nav a:hover {
     background: #5a4e4b;
 }
 
+/* Section Qui sommes-nous */
+#about {
+    padding: 60px 20px;
+    background: #f8f5f1; /* Fond beige doux */
+    text-align: center;
+    color: #3b2f2f; /* Marron rustique */
+}
+
+#about h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3b2f2f;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
 /* Section services */
 #services {
     padding: 60px 20px;
