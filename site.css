@@ -47,17 +47,14 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Style pour le logo BLOOMGMT */
+/* Style pour le logo */
 .logo {
-    font-family: 'London Bridge Extra Bold font', sans-serif; /* Police spéciale */
-    font-size: 3rem; /* Taille du texte */
-    font-weight: 700; /* Gras */
-    color: #673147; /* Old Mauve */
-    letter-spacing: 0.2rem; /* Espacement des lettres */
-    text-transform: uppercase; /* Toutes les lettres en majuscules */
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre subtile */
-    margin: 0;
-    padding: 0;
+    width: auto; /* Ajuste automatiquement la largeur */
+    max-width: 300px; /* Largeur maximale */
+    height: auto; /* Respecte les proportions */
+    display: block;
+    margin: 0 auto; /* Centre le logo horizontalement */
+    padding: 20px 0; /* Espacement au-dessus et au-dessous */
 }
 
 nav a {
