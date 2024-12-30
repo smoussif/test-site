@@ -1,86 +1,55 @@
-/* Style Naturel et Raffiné */
+/* Style général */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f8f5f1;
+    background: #f9f9f9;
     color: #333;
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
-.video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-}
-
-.video-background video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: -1;
-}
-
+/* En-tête */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.9);
-    color: #556B2F;
-    padding: 20px 30px;
     text-align: center;
-    z-index: 10;
+    background: #673147; /* Old Mauve */
+    padding: 20px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Style pour le logo */
-.logo {
-    width: auto; /* Ajuste automatiquement la largeur */
-    max-width: 300px; /* Largeur maximale */
-    height: auto; /* Respecte les proportions */
-    display: block;
-    margin: 0 auto; /* Centre le logo horizontalement */
-    padding: 20px 0; /* Espacement au-dessus et au-dessous */
+header nav {
+    margin-top: 15px;
 }
 
-nav a {
-    margin: 0 15px;
-    color: #6B8E23;
+header nav a {
+    margin: 0 10px;
+    color: white;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: #3b5323;
+header nav a:hover {
+    color: #FFD700; /* Jaune doré */
 }
 
+/* Logo */
+.logo {
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Section héros */
 #hero {
-    position: relative;
-    z-index: 1;
+    background: linear-gradient(to right, #673147, #502336);
+    color: white;
     text-align: center;
-    color: #fff;
-    padding: 120px 20px 60px;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    padding: 100px 20px;
 }
 
 #hero h2 {
-    font-family: 'Merriweather', serif;
     font-size: 2.5rem;
-    font-weight: 400;
     margin-bottom: 20px;
 }
 
@@ -90,50 +59,48 @@ nav a:hover {
 }
 
 #hero .button {
-    background: #6B8E23;
-    color: white;
-    padding: 10px 25px;
-    font-size: 1rem;
-    font-weight: 500;
+    background: #FFD700;
+    color: #502336;
+    padding: 10px 20px;
+    border: none;
     text-decoration: none;
+    font-weight: bold;
     border-radius: 5px;
-    transition: transform 0.2s ease, background 0.3s ease;
+    transition: background 0.3s ease;
 }
 
 #hero .button:hover {
-    transform: scale(1.05);
-    background: #3b5323;
+    background: #FFC107;
 }
 
+/* Section services */
 #services {
-    padding: 60px 20px;
-    background: #f8f5f1;
+    padding: 40px 20px;
     text-align: center;
+    background: #f9f9f9;
 }
 
 #services h2 {
-    font-family: 'Merriweather', serif;
     font-size: 2rem;
+    color: #502336;
     margin-bottom: 30px;
-    color: #333;
 }
 
 .service-banner {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .banner {
     width: 300px;
-    height: 200px;
-    background: #6B8E23;
+    padding: 20px;
+    background: #673147;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .banner:hover {
@@ -141,23 +108,21 @@ nav a:hover {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-.banner h3 {
-    font-family: 'Merriweather', serif;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.banner p {
-    font-size: 1rem;
-}
-
+/* Section contact */
 #contact {
     padding: 40px 20px;
-    background: #fff;
+    background: #502336;
+    color: white;
+    text-align: center;
 }
 
-.contact-form input,
-.contact-form textarea {
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact input,
+#contact textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -165,25 +130,29 @@ nav a:hover {
     border-radius: 5px;
 }
 
-.contact-form button {
-    width: 100%;
-    padding: 10px;
-    background: #6B8E23;
-    color: white;
+#contact button {
+    background: #FFD700;
+    color: #502336;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
-.contact-form button:hover {
-    background: #3b5323;
+#contact button:hover {
+    background: #FFC107;
 }
 
+/* Pied de page */
 footer {
     text-align: center;
     padding: 20px;
-    background: #6B8E23;
+    background: #673147;
     color: white;
     font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
 }
