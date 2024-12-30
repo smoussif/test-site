@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f9f9f9;
+    background: #f5f5dc; /* Beige clair pour un look naturel */
     color: #333;
     line-height: 1.6;
 }
@@ -11,7 +11,7 @@ body {
 /* En-tête */
 header {
     text-align: center;
-    background: #673147; /* Old Mauve */
+    background: #556b2f; /* Vert olive */
     padding: 20px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -22,14 +22,14 @@ header nav {
 
 header nav a {
     margin: 0 10px;
-    color: white;
+    color: #fff; /* Blanc pour contraste */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 header nav a:hover {
-    color: #FFD700; /* Jaune doré */
+    color: #ffd700; /* Jaune doré */
 }
 
 /* Logo */
@@ -42,7 +42,7 @@ header nav a:hover {
 
 /* Section héros */
 #hero {
-    background: linear-gradient(to right, #673147, #502336);
+    background: linear-gradient(to right, #556b2f, #6b8e23); /* Vert olive dégradé */
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -59,8 +59,8 @@ header nav a:hover {
 }
 
 #hero .button {
-    background: #FFD700;
-    color: #502336;
+    background: #ffd700; /* Jaune doré */
+    color: #556b2f; /* Vert olive */
     padding: 10px 20px;
     border: none;
     text-decoration: none;
@@ -70,19 +70,19 @@ header nav a:hover {
 }
 
 #hero .button:hover {
-    background: #FFC107;
+    background: #f0e68c; /* Jaune clair */
 }
 
 /* Section services */
 #services {
     padding: 40px 20px;
     text-align: center;
-    background: #f9f9f9;
+    background: #f5f5dc; /* Beige clair */
 }
 
 #services h2 {
     font-size: 2rem;
-    color: #502336;
+    color: #556b2f; /* Vert olive */
     margin-bottom: 30px;
 }
 
@@ -96,7 +96,7 @@ header nav a:hover {
 .banner {
     width: 300px;
     padding: 20px;
-    background: #673147;
+    background: #6b8e23; /* Vert olive clair */
     color: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -111,7 +111,7 @@ header nav a:hover {
 /* Section contact */
 #contact {
     padding: 40px 20px;
-    background: #502336;
+    background: #556b2f; /* Vert olive foncé */
     color: white;
     text-align: center;
 }
@@ -131,8 +131,8 @@ header nav a:hover {
 }
 
 #contact button {
-    background: #FFD700;
-    color: #502336;
+    background: #ffd700; /* Jaune doré */
+    color: #556b2f; /* Vert olive */
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -141,14 +141,14 @@ header nav a:hover {
 }
 
 #contact button:hover {
-    background: #FFC107;
+    background: #f0e68c; /* Jaune clair */
 }
 
 /* Pied de page */
 footer {
     text-align: center;
     padding: 20px;
-    background: #673147;
+    background: #556b2f; /* Vert olive */
     color: white;
     font-size: 0.9rem;
 }
