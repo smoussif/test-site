@@ -1,15 +1,12 @@
-/* Style général */
+/* Style Moderne et Minimaliste */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f8f9fa;
     color: #333;
-    line-height: 1.6;
-    overflow-x: hidden;
+    background: #f8f9fa;
 }
 
-/* Vidéo de fond */
 .video-background {
     position: fixed;
     top: 0;
@@ -25,7 +22,6 @@ body {
     object-fit: cover;
 }
 
-/* Overlay */
 .overlay {
     position: fixed;
     top: 0;
@@ -36,30 +32,21 @@ body {
     z-index: -1;
 }
 
-/* En-tête */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.8);
-    color: #333;
     padding: 20px 30px;
-    text-align: center;
-    z-index: 10;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .logo {
-    font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     font-weight: 700;
-    margin: 0;
     color: #007BFF;
-}
-
-nav {
-    margin-top: 10px;
 }
 
 nav a {
@@ -67,34 +54,16 @@ nav a {
     color: #007BFF;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease;
 }
 
 nav a:hover {
     color: #0056b3;
 }
 
-/* Section héros */
 #hero {
-    position: relative;
-    z-index: 1;
     text-align: center;
-    color: white;
     padding: 120px 20px 60px;
-    margin-top: 70px;
-}
-
-#hero h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin-bottom: 20px;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-#hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+    color: white;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 }
 
@@ -102,35 +71,19 @@ nav a:hover {
     background: #007BFF;
     color: white;
     padding: 10px 25px;
-    font-size: 1rem;
     font-weight: 500;
-    text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    transition: transform 0.2s ease, background 0.3s ease;
 }
 
 #hero .button:hover {
-    background: #0056b3;
     transform: scale(1.05);
-}
-
-/* Section services */
-#services {
-    padding: 60px 20px;
-    background: #f8f9fa;
-    text-align: center;
-}
-
-#services h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #333;
+    background: #0056b3;
 }
 
 .service-banner {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
@@ -138,59 +91,16 @@ nav a:hover {
 .banner {
     width: 300px;
     height: 200px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #007BFF, #0056b3);
+    background: #007BFF;
     color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 20px;
+    justify-content: center;
+    border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .banner:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.banner h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.banner p {
-    font-size: 1rem;
-}
-
-/* Contact */
-#contact {
-    padding: 40px 20px;
-    background: white;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    width: 100%;
-    padding: 10px;
-    background: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.contact-form button:hover {
-    background: #0056b3;
 }
