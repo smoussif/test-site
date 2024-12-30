@@ -1,106 +1,21 @@
-/* Style général */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f5f5dc; /* Beige clair pour un look naturel */
-    color: #333;
-    line-height: 1.6;
-}
-
-/* En-tête */
-header {
-    text-align: center;
-    background: #556b2f; /* Vert olive */
-    padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header nav {
-    margin-top: 15px;
-}
-
-header nav a {
-    margin: 0 10px;
-    color: #fff; /* Blanc pour contraste */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-header nav a:hover {
-    color: #ffd700; /* Jaune doré */
-}
-
-/* Logo */
-.logo {
-    max-width: 300px;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-}
-
-/* Section héros */
-#hero {
-    background: linear-gradient(to right, #556b2f, #6b8e23); /* Vert olive dégradé */
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-#hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-#hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-#hero .button {
-    background: #ffd700; /* Jaune doré */
-    color: #556b2f; /* Vert olive */
-    padding: 10px 20px;
-    border: none;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
-#hero .button:hover {
-    background: #f0e68c; /* Jaune clair */
-}
-
-/* Section services */
-#services {
-    padding: 40px 20px;
-    text-align: center;
-    background: #f5f5dc; /* Beige clair */
-}
-
-#services h2 {
-    font-size: 2rem;
-    color: #556b2f; /* Vert olive */
-    margin-bottom: 30px;
-}
+/* Style Naturel et Raffiné */
 
 .service-banner {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .banner {
     width: 300px;
-    padding: 20px;
-    background: #6b8e23; /* Vert olive clair */
+    height: 200px;
+    background: #6B8E23;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .banner:hover {
@@ -108,21 +23,23 @@ header nav a:hover {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Section contact */
+.banner h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1rem;
+}
+
 #contact {
     padding: 40px 20px;
-    background: #556b2f; /* Vert olive foncé */
-    color: white;
-    text-align: center;
+    background: #fff;
 }
 
-#contact form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-#contact input,
-#contact textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -130,29 +47,25 @@ header nav a:hover {
     border-radius: 5px;
 }
 
-#contact button {
-    background: #ffd700; /* Jaune doré */
-    color: #556b2f; /* Vert olive */
-    padding: 10px 20px;
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: #6B8E23;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
-#contact button:hover {
-    background: #f0e68c; /* Jaune clair */
+.contact-form button:hover {
+    background: #3b5323;
 }
 
-/* Pied de page */
 footer {
     text-align: center;
     padding: 20px;
-    background: #556b2f; /* Vert olive */
+    background: #6B8E23;
     color: white;
     font-size: 0.9rem;
-}
-
-footer p {
-    margin: 0;
 }
