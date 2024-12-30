@@ -52,7 +52,7 @@ header {
     font-family: 'Montserrat Bold', sans-serif; /* Police spéciale */
     font-size: 3rem; /* Taille du texte */
     font-weight: 700; /* Gras */
-    color: white; /* Couleur du texte */
+    color: #673147; /* Old Mauve */
     letter-spacing: 0.2rem; /* Espacement des lettres */
     text-transform: uppercase; /* Toutes les lettres en majuscules */
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre subtile */
