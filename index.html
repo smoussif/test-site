@@ -5,7 +5,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BLOOMGMT - Accueil</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="site.css">
+    <style>
+        /* Style général */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5dc; /* Beige clair pour un look naturel */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* En-tête */
+        header {
+            text-align: center;
+            background: #556b2f; /* Vert olive */
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header nav {
+            margin-top: 15px;
+        }
+
+        header nav a {
+            margin: 0 10px;
+            color: #fff; /* Blanc pour contraste */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #ffd700; /* Jaune doré */
+        }
+
+        /* Logo */
+        .logo {
+            max-width: 300px;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+
+        /* Section héros */
+        #hero {
+            background: linear-gradient(to right, #556b2f, #6b8e23); /* Vert olive dégradé */
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        #hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        #hero .button {
+            background: #ffd700; /* Jaune doré */
+            color: #556b2f; /* Vert olive */
+            padding: 10px 20px;
+            border: none;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        #hero .button:hover {
+            background: #f0e68c; /* Jaune clair */
+        }
+
+        /* Section services */
+        #services {
+            padding: 40px 20px;
+            text-align: center;
+            background: #f5f5dc; /* Beige clair */
+        }
+
+        #services h2 {
+            font-size: 2rem;
+            color: #556b2f; /* Vert olive */
+            margin-bottom: 30px;
+        }
+
+        .service-banner {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .banner {
+            width: 300px;
+            padding: 20px;
+            background: #6b8e23; /* Vert olive clair */
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .banner:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Section contact */
+        #contact {
+            padding: 40px 20px;
+            background: #556b2f; /* Vert olive foncé */
+            color: white;
+            text-align: center;
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact input,
+        #contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #contact button {
+            background: #ffd700; /* Jaune doré */
+            color: #556b2f; /* Vert olive */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        #contact button:hover {
+            background: #f0e68c; /* Jaune clair */
+        }
+
+        /* Pied de page */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #556b2f; /* Vert olive */
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
